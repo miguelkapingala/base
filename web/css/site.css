@@ -82,3 +82,37 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+.navbar{
+    background-color: rgb(37, 37, 39);
+}
+
+.navbar-nav nav{
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+.nav-item a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+.nav-item:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+.bg-dark {
+    background-color: #1e6887 !important;
+}

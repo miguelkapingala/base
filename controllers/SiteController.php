@@ -59,10 +59,10 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($mensagem = 'Seja bem vindo!')
     {
-        return $this->render('index');
-    }
+        return $this->render('index' , ['mensagem'=>$mensagem]);
+    }  
 
     /**
      * Login action.
