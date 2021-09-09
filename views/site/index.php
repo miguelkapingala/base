@@ -4,8 +4,9 @@
 
 use yii\helpers\Html;
 
-$this->title = 'SISTEMA DE VENDAS!';
-?>
+$this->title = 'Dashboard';
+$this->params['breadcrumbs'][] = $this->title;
+?>  
 <div class="site-index">
 
             <?= Html::encode($mensagem);?>

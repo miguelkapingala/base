@@ -9,6 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\FormularioDeRegistro;
+
 
 class SiteController extends Controller
 {
@@ -53,6 +55,25 @@ class SiteController extends Controller
             ],
         ];
     }
+
+    public function actionRegistro()
+    {
+        $model = new FormularioDeRegistro();
+    
+        if ($model->load(Yii::$app->request->post()) && $model->validate())
+            {
+
+            return $this->render('formulario', ['model' => $model]);
+            } else {
+
+            return $this->render('registro', ['model' => $model]);
+            }
+        }
+
+        public function viewRegistros(){
+            return $this->render('formulario', ['model' => $model]);
+        }
+
 
     /**
      * Displays homepage.
