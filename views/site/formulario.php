@@ -7,15 +7,15 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <p>Voce enviou as seguintes informações:</p>
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <label>Nome : </label>
         <?= Html::encode($model->nome) ?>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <label>Documento : </label>
         <?= Html::encode($model->documento) ?>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <label>Teledone : </label>
          <?= Html::encode($model->telefone) ?>
     </div>
