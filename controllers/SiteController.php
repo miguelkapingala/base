@@ -11,7 +11,6 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\FormularioDeRegistro;
 
-
 class SiteController extends Controller
 {
     /**
@@ -84,6 +83,7 @@ class SiteController extends Controller
     {
         return $this->render('index' , ['mensagem'=>$mensagem]);
     }  
+
 
     /**
      * Login action.

@@ -2,10 +2,13 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-$this->title = 'Dados Cadastrados';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->title = 'Dados Cadastrados';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+
 <p>Voce enviou as seguintes informações:</p>
+
 <div class="row">
     <div class="col-md-4">
         <label>Nome : </label>

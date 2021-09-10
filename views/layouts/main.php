@@ -41,7 +41,7 @@ AppAsset::register($this);
            // ['label' => 'About', 'url' => ['/site/about']],
            // ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Formulário', 'url' => ['/site/registro']],
-           // ['label' => 'Pedidos', 'url' => ['/site/formulario']],
+            ['label' => 'Paises', 'url' => ['/pais/index']],
         ],
     ]);
     NavBar::end();

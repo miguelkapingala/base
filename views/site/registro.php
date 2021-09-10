@@ -2,9 +2,12 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-$this->title = 'Formulário';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->title = 'Formulário';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<h1>Formulários</h1>
+
 <div class="site-contact"> 
 
 <?php $form = ActiveForm::begin(); ?>

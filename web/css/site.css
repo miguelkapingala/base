@@ -108,19 +108,33 @@ a.desc:after {
 
 .nav-item a {
     color: #FFF;
-    padding: 20px;
+    /*padding: 20px;*/
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
+    /*transition: background .4s;*/
+
 }
 .nav-item a:hover {
     background-color: rgb(24, 139, 233);
+    height:35px;
 }
 
 .bg-dark {
   background-color: #1e6887 !important;
+  height: 30px;
 }
 label{
     font-weight: bold;
 
+}
+
+div > h1{
+background: #1e6887 ;
+color: white;
+font-size: 12pt;
+padding: 6px;
+/* border-radius: 10px; */
+font-weight: bold;
+clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%, 0% 90%);
+border-bottom: 2px solid #030303;
 }
