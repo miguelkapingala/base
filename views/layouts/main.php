@@ -42,6 +42,7 @@ AppAsset::register($this);
            // ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Formulário', 'url' => ['/site/registro']],
             ['label' => 'Paises', 'url' => ['/pais/index']],
+            ['label' => 'Login', 'url' => ['/usuario/create']],
         ],
     ]);
     NavBar::end();

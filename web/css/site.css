@@ -138,3 +138,24 @@ font-weight: bold;
 clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%, 0% 90%);
 border-bottom: 2px solid #030303;
 }
+
+.usuarios-create{
+    width: 40vw;
+    height: 40vh;
+    margin: 0 auto;
+    background:#ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}   
+
+.form-control{
+    border-radius: 10px;
+}
+
+.control-label{
+    text-align: center;
+}
