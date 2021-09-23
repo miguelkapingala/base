@@ -4,27 +4,28 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Pais */
+/* @var $model app\models\Contato */
 
-$this->title ="Nome do País : $model->nome ";
-//$this->params['breadcrumbs'][] = ['label' => 'Pais', 'url' => ['index']];
+$this->title ="Mensagem de $model->nome";
+//$this->params['breadcrumbs'][] = ['label' => 'Contatos', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="pais-view">
+<div class="contato-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Atualizar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'nome',
-            'paisName',
+            'telefone',
+            'email:email',
+            'data_contato',
+            'titulo',
+            'mensagem:ntext',
+           
         ],
     ]) ?>
 

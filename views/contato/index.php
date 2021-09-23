@@ -4,19 +4,15 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\PaisSearch */
+/* @var $searchModel app\models\ContatoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Conjunto de Paises';
+$this->title = 'Contatos';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pais-index">
+<div class="contato-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Cadastrar Novo Pais', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -24,13 +20,21 @@ $this->title = 'Conjunto de Paises';
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-           // ['class' => 'yii\grid\SerialColumn'],
+          //  ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+          //  'id',
             'nome',
-            'paisName',
+            //'telefone',
+           // 'email:email',
+           // 'titulo',
+            'data_contato',
+            'mensagem:ntext',
+            
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template'=>'{view}'
+            ],
         ],
     ]); ?>
 

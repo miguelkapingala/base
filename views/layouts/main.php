@@ -23,6 +23,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
+
 <?php $this->beginBody() ?>
 
 <header>
@@ -37,12 +38,15 @@ AppAsset::register($this);
     echo Nav::widget([
         //'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => ['/site']],
+            ['label' => 'Usuario', 'url' => ['/usuario']],
            // ['label' => 'About', 'url' => ['/site/about']],
            // ['label' => 'Contact', 'url' => ['/site/contact']],
-            ['label' => 'Formulário', 'url' => ['/site/registro']],
-            ['label' => 'Paises', 'url' => ['/pais/index']],
-            ['label' => 'Login', 'url' => ['/usuario/create']],
+            ['label' => 'Paises', 'url' => ['/pais']],
+            ['label' => 'Contato', 'url' => ['/contato/create']],
+           
+           // ['label' => 'Login', 'url' => ['/usuario/create']],
+           
         ],
     ]);
     NavBar::end();
@@ -61,8 +65,8 @@ AppAsset::register($this);
 
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
-        <p class="float-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="float-right"><?= Yii::powered() ?></p>
+        <p class="float-left">&copy;SAES IoT<?= date('Y') ?></p>
+       <!-- <p class="float-right"><?= Yii::powered() ?></p>-->
     </div>
 </footer>
 
