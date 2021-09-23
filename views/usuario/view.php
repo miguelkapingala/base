@@ -32,6 +32,9 @@ $this->title = "Dados do Usuario : $model->usuario " ;
             'id',
             'usuario',
             'password',
+            'matricula',
+            'data_de_cadastro',
+            'data_de_admissao'
         ],
     ]) ?>
 

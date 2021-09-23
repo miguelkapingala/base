@@ -25,6 +25,9 @@ $this->title = 'Usuarios Cadastrados';
             'id',
             'usuario',
             'password',
+            'matricula',
+            'data_de_cadastro',
+            'data_de_admissao',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

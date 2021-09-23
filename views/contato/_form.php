@@ -25,10 +25,10 @@ use yii\widgets\ActiveForm;
              <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
         </div>
         <div class="col-md-4">
-            <?= $form->field($model, 'data_contato')->textInput(['rows' => 6]) ?>
+            <?= $form->field($model, 'data_contato')->textInput(['value'=>date('Y-m-d') ,'rows' => 6]) ?>
         </div>
     </div>
-
+    <hr>
     <div class="row">
         <div class="col-md-5">
             <?= $form->field($model, 'titulo')->textInput(['maxlength' => true]) ?>
