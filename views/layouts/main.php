@@ -36,18 +36,37 @@ AppAsset::register($this);
         ],
     ]);
     echo Nav::widget([
-        //'options' => ['class' => 'navbar-nav'],
+        'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site']],
-            ['label' => 'Usuario', 'url' => ['/usuario']],
-           // ['label' => 'About', 'url' => ['/site/about']],
-           // ['label' => 'Contact', 'url' => ['/site/contact']],
-            ['label' => 'Paises', 'url' => ['/pais']],
-            ['label' => 'Contato', 'url' => ['/contato/create']],
-           
-           // ['label' => 'Login', 'url' => ['/usuario/create']],
+            [
+                'label' => 'Home',
+                'url' => ['site/index'],
+                //'linkOptions' => ['...'],
+            ],
+            [
+                'label' => 'Usuario',
+                'items' => [
+                     ['label' => 'Listar', 'url' => ['/usuario/index']],
+                     ['label' => 'Cadastrar', 'url' => ['/usuario/create']],
+                ],
+            ],
+            [
+                'label' => 'Paises',
+                'items' => [
+                     ['label' => 'Listar', 'url' => ['/pais/index']],
+                     ['label' => 'Cadastrar', 'url' => ['/pais/create']],
+                ],
+            ],
+            [
+                'label' => 'Contato',
+                'items' => [
+                     ['label' => 'Listar', 'url' => ['/contato/index']],
+                     ['label' => 'Cadastrar', 'url' => ['/contato/create']],
+                ],
+            ],
            
         ],
+        'options' => ['class' =>'nav-pills'], // set this to nav-tab to get tab-styled navigation
     ]);
     NavBar::end();
     ?>

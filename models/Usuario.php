@@ -27,7 +27,8 @@ class Usuario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['usuario', 'password','matricula','data_de_cadastro','data_de_admissao'], 'string', 'max' => 255],
+            [['usuario', 'password','matricula','data_de_cadastro','data_de_admissao' ], 'string', 'max' => 255],
+            [['status'], 'integer'],
         ];
     }
 
@@ -43,6 +44,7 @@ class Usuario extends \yii\db\ActiveRecord
             'matricula'=>'Matrícula',
             'data_de_cadastro'=>'Data de Cadastro',
             'data_de_admissao'=>'Data de Admissao',
+            'status' =>'Situação',
         ];
     }
 }

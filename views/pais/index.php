@@ -14,19 +14,15 @@ $this->title = 'Conjunto de Paises';
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Cadastrar Novo Pais', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-           // ['class' => 'yii\grid\SerialColumn'],
+           ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+           // 'id',
             'nome',
             'paisName',
 

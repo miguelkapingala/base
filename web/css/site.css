@@ -93,17 +93,22 @@ a.desc:after {
     outline: none;
 }
 .navbar{
-    background-color: rgb(37, 37, 39);
+   background-color: rgb(37, 37, 39);
+    color: #FFF;
 }
 
 .navbar-nav nav{
+    margin-top: 10px;
     max-width: 800px;
     list-style: none;
     padding: 0;
+    color: #FFF;
 }
 
 .nav-item {
     display: inline;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 .nav-item a {
@@ -117,11 +122,16 @@ a.desc:after {
 .nav-item a:hover {
     background-color: rgb(24, 139, 233);
     height:35px;
+    color: #FFF;
+    font-weight: 800;
 }
 
 .bg-dark {
-  background-color: #1e6887 !important;
-  height: 30px;
+        background-color: #1e6887 !important;
+        height: 40px;
+        border-bottom: 3px solid #000;
+        color: #FFF;
+  
 }
 label{
     font-weight: bold;
@@ -139,25 +149,19 @@ clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%, 0% 90%);
 border-bottom: 2px solid #030303;
 }
 
-.usuarios-create{
-    width: 40vw;
-    height: 40vh;
-    margin: 0 auto;
-    background:#ccc;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-
-}   
-
 .form-control{
     border-radius: 10px;
 }
 
 .control-label{
     text-align: center;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    background-color:#1e6887;
+    
 }
 
 .form-control {
@@ -174,4 +178,41 @@ border-bottom: 2px solid #030303;
     border: 1px solid #000;
     border-radius: 0.80rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+body div.wrap nav.navbar div div ul li .dropdown-submenu .dropdown-toggle,  body div.wrap nav.navbar div div ul li .dropdown-submenu .dropdown-toggle a{
+    background-color:white !important;
+    color:#000 !important;
+}
+
+.dropdown-menu{
+    min-width:200px;
+}
+
+.navbar-fixed-top li.open a.dropdown-toggle, .navbar-fixed-top li.open a.dropdown-toggle span.glyphicon,.navbar-fixed-top li.open a.dropdown-toggle span.caret{
+    background-color:#000 !important;
+    color:white !important;
+}
+
+.dropdown-menu {
+    width: fit-content !important;
+    position: absolute;
+    top: 94%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #1e6887;
+    background-clip: padding-box;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+
+ 
 }

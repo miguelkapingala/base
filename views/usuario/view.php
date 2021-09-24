@@ -33,8 +33,14 @@ $this->title = "Dados do Usuario : $model->usuario " ;
             'usuario',
             'password',
             'matricula',
+            [
+            'attribute'=>'status',
+                'value' => function($model){
+                    return $model->status==1?"ATIVO":"NÃO ATIVO";
+                }
+            ],
             'data_de_cadastro',
-            'data_de_admissao'
+            'data_de_admissao',
         ],
     ]) ?>
 
